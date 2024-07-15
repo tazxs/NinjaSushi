@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/placing-order.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <title>Placing</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logо">
+                    <a href="https://www.instagram.com/codecultis/" class="logo-link">Jas <span>Web</span></a>
+                </div>
+                <div class="country" id="country">
+                    <img class="kz" src="../img/images/kz.png" alt="kz">
+                    <p class="text-country">Актобе</p>
+                    <p class="text-language">RU</p>
+                </div>
+
+                <div class="location none" id="location">
+                    <div class="flex-title">
+                        <h2 class="title-location">Вы в Актобе?</h2>
+                        <div class="cross-location">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <a href="#" class="location-btn">Да</a>
+                    <a href="#" class="location-btn">Нет</a>
+                </div>
+
+                <div class="modal-language none">
+                    <div class="flex-title">
+                        <h2 class="title-language">Выберите язык</h2>
+                        <div class="cross-language">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-language">RU</a>
+                    <a href="#" class="btn-language">UA</a>
+                    <a href="#" class="btn-language">EN</a>
+                    <div class="choose-town">
+                        <p class="text-choose">Выберите город</p>
+                        <a href="#" class="btn-town">Aктобе</a>
+                        <a href="#" class="btn-town">Атырау</a>
+                        <a href="#" class="btn-town">Алматы</a>
+                        <a href="#" class="btn-town">Астана</a>
+                    </div>
+                </div>
+
+                
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../../../Toha/src/index.html" class="nav-link">Главная</a></li>
+                        <li class="nav-item"><a href="../../../Damir/src/pages/Delivery.html" class="nav-link">Доставка</a></li>
+                        <li class="nav-item"><a href="../../../EeOneGet/src/pages/Public-contract.html" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="../../../Damir/src/pages/News.html" class="nav-link">Новости</a></li>
+                    </ul>
+                </nav>
+
+                <div class="phone">
+                    <img src="../img/icons/phone-header.svg" alt="phone">
+                    <p class="phone-number">+38 097 699 34 38</p>
+                </div>
+
+                <div class="phone-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-phone">Звоните нам с 10:00 до 21:30 без выходных</h2>
+                        <div class="phone-cross">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <div class="block-phone">
+                        <img src="../img/icons/phone-modal(1).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                    </div>
+                    <div class="block-phone">
+                        <img src="../img/icons/phone-modal(2).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (066) 031 76 30</p>
+                    </div>
+                    <div class="block-phone">
+                        <img src="../img/icons/phone-modal(3).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (093) 924 98 28</p>
+                    </div>
+                </div>
+
+                <div class="notification-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-notification">Уведомления</h2>
+                        <div class="cross-notification">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <div class="notification-order">
+                        <p class="order-text">Ашот, ваш заказ успешно доставлен!</p>
+                        <div class="tips">
+                            <h3 class="tips-title">Хотите оставить чаевые?</h3>
+                            <div class="tips-btns">
+                                <a href="#" class="tip-btn">20 <span class="currency">₴</span> <span class="discount">(5%)</span></a>
+                                <a href="#" class="tip-btn">50  <span class="currency">₴</span> <span class="discount">(10%)</span></a>
+                                <a href="#" class="tip-btn">75 <span class="currency">₴</span> <span class="discount">(15%)</span></a>
+                                <input type="text" placeholder="Укажите сумму">
+                                <a href="" class="tip-btn red">Не оставлять чаевых</a>
+                                <a href="" class="tip-btn green">Оплатить  75₴ </a>
+                            </div>
+
+                        </div>
+                        <p class="order-text gray">16.02 в 16:40</p>
+
+                    </div>
+                    <div class="block-notification">
+                        <h2 class="block-title">Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году</h2>
+                        <p class="block-text">16.02 в 16:40</p>
+                    </div>
+                    <div class="block-notification">
+                        <h2 class="block-title">Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году</h2>
+                        <p class="block-text">16.02 в 16:40</p>
+                    </div>
+                </div>
+
+                <div class="cart-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-cart">Ваш заказ</h2>
+                        <div class="cross-cart">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/kit (1).png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Philadelphia-with-salmon.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Филадельфия с угрем</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Kratos.png" alt="Kratos">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Gunkan-salmon.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Nigiri-eel.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/snack(2).png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cart-text">Минимальная сумма заказа 400 грн</p>
+                    <div class="block-total">
+                        <div class="left-total">
+                            <p>Итого:</p>
+                            <h3 class="total-title">643 <span>грн</span></h3>
+                        </div>
+                        <div class="right-total">
+                            <a href="#" class="btn-green">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-btns__header">
+                    <a href="#" class="header-btn bell">
+                        <img src="../img/icons/bell.svg" alt="bell">
+                    </a>
+                    <a href="#" class="header-btn heart">
+                        <img src="../img/icons/heart.svg" alt="hea">
+                    </a>
+                    <!-- 52 ДА ЗДРАВСТВУЙ... -->
+                    <a href="#" class="header-btn user">
+                        <img src="../img/icons/user.svg" alt="bell">
+                    </a>
+                    <a href="#" class="header-btn cart">
+                        Корзина
+                        <img src="../img/icons/shopping-bag-black (2).svg" alt="bell">
+                    </a>
+                    <a href="#" id="burger-menu" class="burger-menu">
+                        <img src="../img/icons/burger-menu.svg" alt="burger-menu">
+                    </a>
+                </div>
+
+                
+            </div>
+
+
+            
+            
+            <div class="header-down">
+                <div class="row-dishes">
+                    <div class="dish">
+                        <img src="../img/icons/roll.svg" alt="roll">
+                        <p class="text-dish">Роллы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/sushi.svg" alt="sushi">
+                        <p class="text-dish">Суши</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/kit.svg" alt="kit">
+                        <p class="text-dish">Сеты</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/bowls.svg" alt="bowls">
+                        <p class="text-dish">Боулы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/drinks.svg" alt="drinks">
+                        <p class="text-dish">Напитки</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/souses.svg" alt="souses">
+                        <p class="text-dish">Соусы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/spiral.svg" alt="spiral">
+                        <p class="text-dish">Неизв...</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/spiral.svg" alt="spiral">
+                        <p class="text-dish">Неизв...</p>
+                    </div>
+                </div>
+                <div class="row-dishes-mob">
+                    <div class="dish">
+                        <img src="../img/icons/roll.svg" alt="roll">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/sushi.svg" alt="sushi">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/kit.svg" alt="kit">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/bowls.svg" alt="bowls">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/drinks.svg" alt="drinks">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/souses.svg" alt="souses">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/spiral.svg" alt="spiral">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-modal hidden">
+            <div class="container-menu">
+                <div class="flex-title__menu">
+                    <h2 class="menu-title">Меню</h2>
+                    <div class="cross-menu">
+                        <img  src="../img/icons/cross.svg" alt="cross">
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <div class="country">
+                        <div class="left">
+                            <img src="../img/images/kz.png" alt="kz">
+                            <p class="text-country">Актобе</p>
+                        </div>
+                        <div class="right">
+                            <img src="../img/icons/chevron-down.svg" alt="chevron-down">
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <div class="left">
+                            <p class="text-language">Язык:Ru</p>
+                        </div>
+                        <div class="right">
+                            <img src="../img/icons/chevron-down.svg" alt="chevron-down">
+                        </div>
+                    </div>
+
+                    <div class="dishes">
+                        <div class="dish">
+                            <img src="../img/icons/sushi-orange.svg" alt="sushi-orange">
+                            <p class="text-product">Суши</p>
+                        </div>
+    
+                        <div class="dish">
+                            <img src="../img/icons/roll-orange.svg" alt="roll-orange">
+                            <p class="text-product">Роллы</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/kit-orange.svg" alt="kit-orange">
+                            <p class="text-product">Сеты</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/bowls-orange.svg" alt="bowls-orange">
+                            <p class="text-product">Боулы</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/drinks-orange.svg" alt="drinks-orange">
+                            <p class="text-product">Напитки</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/souses-orange.svg" alt="souses-orange">
+                            <p class="text-product">Снеки</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/spiral.svg" alt="spiral">
+                            <p class="text-product green">New</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/spiral.svg" alt="spiral">
+                            <p class="text-product green">New</p>
+                        </div>
+                    </div>
+
+                    <div class="nav-blocks">
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/shopping-bag-black-(2).svg" alt="">
+                            Повторить прошлый заказ
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/heart.svg" alt="">
+                            Избранное
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/user.svg" alt="">
+                            Профиль
+                        </a>
+                        <a href="" class="block-nav ">
+                            Главная
+                        </a>
+                        <a href="" class="block-nav ">
+                            Доставка
+                        </a>
+                        <a href="" class="block-nav ">
+                            О нас
+                        </a>
+                        <a href="" class="block-nav ">
+                            Новости
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/tg.svg" alt="tg">
+                            Поддержка
+                        </a>
+                    </div>
+
+                    <div class="block-checkout">
+                        <h3 class="title-checkout">Оформить заказ:</h3>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="text-checkout">Звоните нам с 9:00 до 21:00 без выходных</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="placing-section">
+                <div class="placing-general-block">
+                     <div class="placing-succes-wrap">
+                        <p class="placing-succes-text">
+                            Спасибо <br>
+                            ваш заказ <span>#83721</span>
+                            успешно оформлен
+                        </p>
+                     </div>
+                     <div class="placing-delivery-wrap">
+                        <h2 class="placing-delivery-title">
+                            Информация о доставке
+                        </h2>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Адрес:</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">проспект Науки, 13 До двери, кв 10 этаж 5</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Время:</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">12 июля 12:00</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Способ оплаты:</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Наличными курьеру</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Сумма к оплате:</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">338грн</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Сдача с</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">500грн</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Кол-во человек:</p>
+                            </div>
+                            <div class="placing-dash-line">
+                                <div class="placing-dashed-line"></div>
+                            </div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">4</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <p class="placing-delivery-text">Примечание:</p>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <p class="placing-delivery-text">Не звонить в дверь</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="placing-mobile-block">
+                    <div class="placing-succes-wrap">
+                        <p class="placing-succes-text">
+                            Спасибо <br>
+                            ваш заказ <span>#83721</span>
+                            успешно оформлен
+                        </p>
+                     </div>
+                     <div class="procces-mobile-line">
+                        <div class="procces-img-wrap">
+                            <img src="../img/images/Gunkan-salmon.png" alt="" class="procces-img">
+                        </div>
+                        <div class="procces-text-wrap">
+                            <p class="procces-mobile-title">
+                                Нигири угорь
+                            </p>
+                            <p class="procces-mobile-wight">
+                                Вес: 40 г
+                            </p>
+                            <div class="procces-total-mobile">
+                                <div class="mobile-total-cost">
+                                    <p class="mobile-cost">
+                                        90<span>грн</span>
+                                    </p>
+                                </div>
+                                <div class="mobile-total-cost">
+                                    <p class="mobile-guant">
+                                        1шт
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="procces-mobile-line">
+                        <div class="procces-img-wrap">
+                            <img src="../img/images/Gunkan-salmon.png" alt="" class="procces-img">
+                        </div>
+                        <div class="procces-text-wrap">
+                            <p class="procces-mobile-title">
+                                Нигири угорь
+                            </p>
+                            <p class="procces-mobile-wight">
+                                Вес: 40 г
+                            </p>
+                            <div class="procces-total-mobile">
+                                <div class="mobile-total-cost">
+                                    <p class="mobile-cost">
+                                        90<span>грн</span>
+                                    </p>
+                                </div>
+                                <div class="mobile-total-cost">
+                                    <p class="mobile-guant">
+                                        1шт
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="placing-delivery-wrap">
+                        <h2 class="placing-delivery-title">
+                            Информация о доставке
+                        </h2>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-first-text">Адрес:</p>
+                            </div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">проспект Науки, 13 До двери, кв 10 этаж 5</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-first-text">Время:</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">12 июля 12:00</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-first-text">Способ оплаты:</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">Наличными курьеру</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-first-text">Сумма к оплате:</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">338грн</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-first-text">Сдача с</p>
+                            </div>
+                            <div class="placing-dash-line"></div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">500грн</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-first-text">Кол-во человек:</p>
+                            </div>
+                            <div class="placing-dash-line">
+                                <div class="placing-dashed-line"></div>
+                            </div>
+                            <div class="placing-delivery-text-wrap">
+                                <p class="placing-delivery-text">4</p>
+                            </div>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <p class="placing-delivery-text">Примечание:</p>
+                        </div>
+                        <div class="placing-delivery-line">
+                            <p class="placing-delivery-text">Не звонить в дверь</p>
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <section class="procces-section">
+                <div class="procces-order-line">
+                    <div class="procces-date-block">
+                        <i class="angle fa-solid fa-angle-down"></i>
+                        <div class="date-text-block">
+                            <p class="date-text">
+                                20 мая 2020
+                            </p>
+                            <p class="date-num">
+                                # 86352
+                            </p>
+                        </div>
+                    </div>
+                    <div class="procces-roll-wrap">
+                        <div class="roll-image-wrap">
+                            <img src="../img/images/Gunkan-salmon.png" alt="" class="roll-img">
+                        </div>
+                        <div class="roll-image-wrap">
+                            <img src="../img/images/gunkan-shrimp.png" alt="" class="roll-img">
+                        </div>
+                        <div class="roll-image-wrap">
+                            <img src="../img/images/Nigiri-eel.png" alt="" class="roll-img">
+                        </div>
+                        <div class="roll-image-wrap">
+                            <img src="../img/images/Gunkan-with-tuna-and-truffle.png" alt="" class="roll-img">
+                        </div>
+                    </div>
+                    <div class="procces-total-block">
+                        <div class="procces-total-item">
+                            <div class="procces-total-elem">
+                                <p class="procces-total-title">
+                                    Кол-во
+                                </p>
+                                <p class="proccees-total-num">
+                                    7
+                                </p>
+                            </div>
+                            <div class="procces-total-elem">
+                                <p class="procces-total-title">
+                                    Кол-во
+                                </p>
+                                <p class="proccees-total-num">
+                                    338 <span>грн</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="procces-list-line">
+                    <div class="list-kit-wrap">
+                        <div class="kit-image-wrap">
+                            <img src="../img/images/kit(2).png" alt="" class="kit-img">
+                        </div>
+                        <div class="kit-text-wrap">
+                            <p class="kit-title">
+                                Сет #2
+                            </p>
+                            <p class="kit-text">
+                                Вес: 40 г
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-total-wrap">
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Цена
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Кол-во
+                            </h2>
+                            <p class="list-total-text">
+                                1
+                            </p>
+                        </div>
+
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Итого
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="procces-list-line">
+                    <div class="list-kit-wrap">
+                        <div class="kit-image-wrap">
+                            <img src="../img/images/Philadelphia-with-eel.png" alt="" class="kit-img">
+                        </div>
+                        <div class="kit-text-wrap">
+                            <p class="kit-title">
+                                Филадельфия с угрем
+                            </p>
+                            <p class="kit-text">
+                                Вес: 40 г
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-total-wrap">
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Цена
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Кол-во
+                            </h2>
+                            <p class="list-total-text">
+                                1
+                            </p>
+                        </div>
+
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Итого
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="procces-list-line">
+                    <div class="list-kit-wrap">
+                        <div class="kit-image-wrap">
+                            <img src="../img/images/gunkan-shrimp.png" alt="" class="kit-img">
+                        </div>
+                        <div class="kit-text-wrap">
+                            <p class="kit-title">
+                                Гункан креветка
+                            </p>
+                            <p class="kit-text">
+                                Вес: 40 г
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-total-wrap">
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Цена
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Кол-во
+                            </h2>
+                            <p class="list-total-text">
+                                1
+                            </p>
+                        </div>
+
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Итого
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="procces-list-line">
+                    <div class="list-kit-wrap">
+                        <div class="kit-image-wrap">
+                            <img src="../img/images/Nigiri-eel.png" alt="" class="kit-img">
+                        </div>
+                        <div class="kit-text-wrap">
+                            <p class="kit-title">
+                                Рол Каліфорнія з курчам
+                            </p>
+                            <p class="kit-text">
+                                Вес: 40 г
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list-total-wrap">
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Цена
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Кол-во
+                            </h2>
+                            <p class="list-total-text">
+                                1
+                            </p>
+                        </div>
+
+                        <div class="total-item">
+                            <h2 class="list-total-title">
+                                Итого
+                            </h2>
+                            <p class="list-total-text">
+                                850 <span>грн</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="procces-mobile-line">
+                    <div class="procces-img-wrap">
+                        <img src="../img/images/Gunkan-salmon.png" alt="" class="procces-img">
+                    </div>
+                    <div class="procces-text-wrap">
+                        <p class="procces-mobile-title">
+                            Нигири угорь
+                        </p>
+                        <p class="procces-mobile-wight">
+                            Вес: 40 г
+                        </p>
+                        <div class="procces-total-mobile">
+                            <div class="mobile-total-cost">
+                                <p class="mobile-cost">
+                                    90<span>грн</span>
+                                </p>
+                            </div>
+                            <div class="mobile-total-cost">
+                                <p class="mobile-guant">
+                                    1шт
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="procces-mobile-line">
+                    <div class="procces-img-wrap">
+                        <img src="../img/images/Gunkan-salmon.png" alt="" class="procces-img">
+                    </div>
+                    <div class="procces-text-wrap">
+                        <p class="procces-mobile-title">
+                            Нигири угорь
+                        </p>
+                        <p class="procces-mobile-wight">
+                            Вес: 40 г
+                        </p>
+                        <div class="procces-total-mobile">
+                            <div class="mobile-total-cost">
+                                <p class="mobile-cost">
+                                    90<span>грн</span>
+                                </p>
+                            </div>
+                            <div class="mobile-total-cost">
+                                <p class="mobile-guant">
+                                    1шт
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="procces-buttons">
+                    <div class="procces-main-button">
+                        <a href="../../../Toha/src/index.html" class="procces-main-btn">Вернутся на главную</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="content_left">
+                    <div class="footer__logo"><a href="#">JasWeb</a></div>
+                    <img src="../img/icons/app-store.svg" alt="app-store">
+                    <img src="../img/icons/google-play.svg" alt="google-play">
+                    <p class="text-left">© Ninja Sushi. All rights reserved.</p>
+                    <p class="text-mob">В ассортименте Ninja Sushi представлены роллы, суши, сеты и напитки на любой вкус.</p>
+                </div>
+                <div class="content_center">
+                    <nav class="footer_nav">
+                        <p class="text">Навигация:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="../../../Toha/src/index.html">Главная</a></li>
+                            <li class="list-item"><a href="../../../Beka/src/pages/Category.html">Меню</a></li>
+                            <li class="list-item"><a href="../../../Damir/src/pages/Delivery.html">Доставка</a></li>
+                            <li class="list-item"><a href="#">Вакансии</a></li>
+                            <li class="list-item"><a href="../../../Damir/src/pages/News.html">Новости</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_nav">
+                        <p class="text">Оформить заказ:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item-mob"><a class="gray" href="#">Звоните нам с 9:00 до 21:00 без выходных</a></li>
+
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_nav">
+                        <p class="text">Время работы:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="#">с 11:00 до 22:45</a></li>
+                            <li class="list-item"><a href="#">с 22.45 до 06.00</a></li>
+                            <li class="list-item"><a class="gray" href="#">Ночная доставка</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="socials">
+                        <p class="socials-text">Мы в соц. сетях:</p>
+                        <img class="facebook" src="../img/icons/facebook.svg" alt="facebook">
+                        <img class="insta" src="../img/icons/insta.svg" alt="insta">
+                        <a class="social-btn" href="#">
+                            <img src="../img/icons/tg.svg" alt="tg">
+                            Техподдержка
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content_right">
+                    <h2 class="title-right">#NinjaSushi</h2>
+                    <p class="text-right">Ninja Sushi в фотографиях наших клиентов</p>
+                    <a href="#" class="btn-right">Перейти в instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="content-left">
+                    <p class="text-left__bottom">Политика конфиденциальности</p>
+                    <p class="text-left__bottom second">Сделано Дмитрием (dmitry_dima)</p>
+                </div>
+                <div class="content-right">
+                    <img src="../img/icons/master-card.svg" alt="master-card">
+                    <img src="../img/icons/visa.svg" alt="visa">
+                    <img src="../img/icons/pb.svg" alt="pb">
+                </div>
+            </div>
+            <div class="footer-bottom__mob">
+                <p class="text-footer__mob">Пользовательское соглашение</p>
+                <div class="banks">
+                    <img src="../img/icons/master-card.svg" alt="master-card">
+                    <img src="../img/icons/visa.svg" alt="visa">
+                    <img src="../img/icons/pb.svg" alt="pb">
+                    <p class="text-footer__mob">Сделано: Бекой (Scoromoh_XD)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/header.js"></script>
+</body>
+</html>

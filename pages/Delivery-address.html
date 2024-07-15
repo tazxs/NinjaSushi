@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адрес доставки</title>
+    <link rel="stylesheet" href="../css/deliveryAddres.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logо">
+                    <a href="https://www.instagram.com/codecultis/" class="logo-link">Jas <span>Web</span></a>
+                </div>
+                <div class="country" id="country">
+                    <img class="kz" src="../img/images/kz.png" alt="kz">
+                    <p class="text-country">Актобе</p>
+                    <p class="text-language">RU</p>
+                </div>
+
+                <div class="location none" id="location">
+                    <div class="flex-title">
+                        <h2 class="title-location">Вы в Актобе?</h2>
+                        <div class="cross-location">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <a href="#" class="location-btn">Да</a>
+                    <a href="#" class="location-btn">Нет</a>
+                </div>
+
+                <div class="modal-language none">
+                    <div class="flex-title">
+                        <h2 class="title-language">Выберите язык</h2>
+                        <div class="cross-language">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-language">RU</a>
+                    <a href="#" class="btn-language">UA</a>
+                    <a href="#" class="btn-language">EN</a>
+                    <div class="choose-town">
+                        <p class="text-choose">Выберите город</p>
+                        <a href="#" class="btn-town">Aктобе</a>
+                        <a href="#" class="btn-town">Атырау</a>
+                        <a href="#" class="btn-town">Алматы</a>
+                        <a href="#" class="btn-town">Астана</a>
+                    </div>
+                </div>
+
+                
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Главная</a></li>
+                        <li class="nav-item"><a href="../../../Damir/src/pages/Delivery.html" class="nav-link">Доставка</a></li>
+                        <li class="nav-item"><a href="../../../EeOneGet/src/pages/Public-contract.html" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="../../../Damir/src/pages/News.html" class="nav-link">Новости</a></li>
+                    </ul>
+                </nav>
+
+                <div class="phone">
+                    <img src="../img/icons/phone-header.svg" alt="phone">
+                    <p class="phone-number">+38 097 699 34 38</p>
+                </div>
+
+                <div class="phone-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-phone">Звоните нам с 10:00 до 21:30 без выходных</h2>
+                        <div class="phone-cross">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <div class="block-phone">
+                        <img src="../img/icons/phone-modal(1).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                    </div>
+                    <div class="block-phone">
+                        <img src="../img/icons/phone-modal(2).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (066) 031 76 30</p>
+                    </div>
+                    <div class="block-phone">
+                        <img src="../img/icons/phone-modal(3).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (093) 924 98 28</p>
+                    </div>
+                </div>
+
+                <div class="notification-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-notification">Уведомления</h2>
+                        <div class="cross-notification">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <div class="notification-order">
+                        <p class="order-text">Ашот, ваш заказ успешно доставлен!</p>
+                        <div class="tips">
+                            <h3 class="tips-title">Хотите оставить чаевые?</h3>
+                            <div class="tips-btns">
+                                <a href="#" class="tip-btn">20 <span class="currency">₴</span> <span class="discount">(5%)</span></a>
+                                <a href="#" class="tip-btn">50  <span class="currency">₴</span> <span class="discount">(10%)</span></a>
+                                <a href="#" class="tip-btn">75 <span class="currency">₴</span> <span class="discount">(15%)</span></a>
+                                <input type="text" placeholder="Укажите сумму">
+                                <a href="" class="tip-btn red">Не оставлять чаевых</a>
+                                <a href="" class="tip-btn green">Оплатить  75₴ </a>
+                            </div>
+
+                        </div>
+                        <p class="order-text gray">16.02 в 16:40</p>
+
+                    </div>
+                    <div class="block-notification">
+                        <h2 class="block-title">Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году</h2>
+                        <p class="block-text">16.02 в 16:40</p>
+                    </div>
+                    <div class="block-notification">
+                        <h2 class="block-title">Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году</h2>
+                        <p class="block-text">16.02 в 16:40</p>
+                    </div>
+                </div>
+
+                <div class="cart-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-cart">Ваш заказ</h2>
+                        <div class="cross-cart">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/kit (1).png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Philadelphia-with-salmon.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Филадельфия с угрем</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Kratos.png" alt="Kratos">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Gunkan-salmon.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/Nigiri-eel.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="../img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="../img/images/snack(2).png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="../img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="../img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cart-text">Минимальная сумма заказа 400 грн</p>
+                    <div class="block-total">
+                        <div class="left-total">
+                            <p>Итого:</p>
+                            <h3 class="total-title">643 <span>грн</span></h3>
+                        </div>
+                        <div class="right-total">
+                            <a href="#" class="btn-green">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-btns__header">
+                    <a href="#" class="header-btn bell">
+                        <img src="../img/icons/bell.svg" alt="bell">
+                    </a>
+                    <a href="#" class="header-btn heart">
+                        <img src="../img/icons/heart.svg" alt="hea">
+                    </a>
+                    <!-- 52 ДА ЗДРАВСТВУЙ... -->
+                    <a href="#" class="header-btn user">
+                        <img src="../img/icons/user.svg" alt="bell">
+                    </a>
+                    <a href="#" class="header-btn cart">
+                        Корзина
+                        <img src="../img/icons/shopping-bag-black (2).svg" alt="bell">
+                    </a>
+                    <a href="#" id="burger-menu" class="burger-menu">
+                        <img src="../img/icons/burger-menu.svg" alt="burger-menu">
+                    </a>
+                </div>
+
+                
+            </div>
+
+
+            
+            
+            <div class="header-down">
+                <div class="row-dishes">
+                    <div class="dish">
+                        <img src="../img/icons/roll.svg" alt="roll">
+                        <p class="text-dish">Роллы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/sushi.svg" alt="sushi">
+                        <p class="text-dish">Суши</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/kit.svg" alt="kit">
+                        <p class="text-dish">Сеты</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/bowls.svg" alt="bowls">
+                        <p class="text-dish">Боулы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/drinks.svg" alt="drinks">
+                        <p class="text-dish">Напитки</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/souses.svg" alt="souses">
+                        <p class="text-dish">Соусы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/spiral.svg" alt="spiral">
+                        <p class="text-dish">Неизв...</p>
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/spiral.svg" alt="spiral">
+                        <p class="text-dish">Неизв...</p>
+                    </div>
+                </div>
+                <div class="row-dishes-mob">
+                    <div class="dish">
+                        <img src="../img/icons/roll.svg" alt="roll">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/sushi.svg" alt="sushi">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/kit.svg" alt="kit">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/bowls.svg" alt="bowls">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/drinks.svg" alt="drinks">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/souses.svg" alt="souses">
+                    </div>
+                    <div class="dish">
+                        <img src="../img/icons/spiral.svg" alt="spiral">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-modal hidden">
+            <div class="container-menu">
+                <div class="flex-title__menu">
+                    <h2 class="menu-title">Меню</h2>
+                    <div class="cross-menu">
+                        <img  src="../img/icons/cross.svg" alt="cross">
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <div class="country">
+                        <div class="left">
+                            <img src="../img/images/kz.png" alt="kz">
+                            <p class="text-country">Актобе</p>
+                        </div>
+                        <div class="right">
+                            <img src="../img/icons/chevron-down.svg" alt="chevron-down">
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <div class="left">
+                            <p class="text-language">Язык:Ru</p>
+                        </div>
+                        <div class="right">
+                            <img src="../img/icons/chevron-down.svg" alt="chevron-down">
+                        </div>
+                    </div>
+
+                    <div class="dishes">
+                        <div class="dish">
+                            <img src="../img/icons/sushi-orange.svg" alt="sushi-orange">
+                            <p class="text-product">Суши</p>
+                        </div>
+    
+                        <div class="dish">
+                            <img src="../img/icons/roll-orange.svg" alt="roll-orange">
+                            <p class="text-product">Роллы</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/kit-orange.svg" alt="kit-orange">
+                            <p class="text-product">Сеты</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/bowls-orange.svg" alt="bowls-orange">
+                            <p class="text-product">Боулы</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/drinks-orange.svg" alt="drinks-orange">
+                            <p class="text-product">Напитки</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/souses-orange.svg" alt="souses-orange">
+                            <p class="text-product">Снеки</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/spiral.svg" alt="spiral">
+                            <p class="text-product green">New</p>
+                        </div>
+                        <div class="dish">
+                            <img src="../img/icons/spiral.svg" alt="spiral">
+                            <p class="text-product green">New</p>
+                        </div>
+                    </div>
+
+                    <div class="nav-blocks">
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/shopping-bag-black (2).svg" alt="">
+                            Повторить прошлый заказ
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/heart.svg" alt="">
+                            Избранное
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/user.svg" alt="">
+                            Профиль
+                        </a>
+                        <a href="" class="block-nav ">
+                            Главная
+                        </a>
+                        <a href="" class="block-nav ">
+                            Доставка
+                        </a>
+                        <a href="" class="block-nav ">
+                            О нас
+                        </a>
+                        <a href="" class="block-nav ">
+                            Новости
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="../img/icons/tg.svg" alt="tg">
+                            Поддержка
+                        </a>
+                    </div>
+
+                    <div class="block-checkout">
+                        <h3 class="title-checkout">Оформить заказ:</h3>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="text-checkout">Звоните нам с 9:00 до 21:00 без выходных</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="#" class="bread_btn"><i class="fa-solid fa-arrow-left"></i>Назад</a>
+            <a href="../index.html" class="bread_home"><i class="fa-solid fa-house"></i></a>
+            <i class="fa-solid fa-arrow-right"></i>
+            <a href="#" class="bread_link">Оформление заказа</a>
+        </div>
+        <div class="wrapper">
+            <aside class="aside">
+                <nav class="aside_nav">
+                    <a href="./History-of-orders.html" class="nav_list">
+                        <span class="nav_list__icon"><i class="fa-solid fa-box-archive"></i></span>
+                        <span class="nav_list__text">История заказов</span>
+                    </a>
+                    <a href="./Featured-Products.html" class="nav_list">
+                        <span class="nav_list__icon"><i class="fa-regular fa-heart"></i></span>
+                        <span class="nav_list__text">Избранные товары</span>
+                    </a>
+                    <a href="#" class="nav_list active">
+                        <span class="nav_list__icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="nav_list__text">Адрес доставки</span>
+                    </a>
+                    <a href="#" class="nav_list">
+                        <span class="nav_list__icon"><i class="fa-regular fa-sun"></i></span>
+                        <span class="nav_list__text">Тема сайта</span>
+                    </a>
+                </nav>
+                <div class="aside_badge">
+                    <div class="badge_left">
+                        <img src="../img/images/Personal-Area/ninja.png" alt="">
+                    </div>
+                    <div class="badge_right">
+                        <div class="right_top">
+                            <h2 class="right_top__title">Ашот</h2>
+                            <button class="right_top__btn"><i class="fa-solid fa-pen"></i></button>
+                        </div>
+                        <p class="badge_right__email">Lifetv277@gmaIl.com</p>
+                        <p class="badge_right__number">+380976986848</p>
+                    </div>
+                </div>
+                <div class="modal hidden">
+                    <a href="#" class="close_btn">&times;</a>
+                    <h2 class="modal_title">Форма данных</h2>
+                    <form action="#">
+                        <div class="modal_box">
+                            <input type="text" placeholder="Введите имя" class="modal_input name">
+                            <label>Имя</label>
+                        </div>
+                        <div class="modal_box">
+                            <input type="email" placeholder="Введите email" class="modal_input email">
+                            <label>Email</label>
+                        </div>
+                        <div class="modal_box">
+                            <input type="number" placeholder="Введите номер" class="modal_input number">
+                            <label>Номер</label>
+                        </div>
+                        <a href="#" class="modal_btn btn">Сохранить</a>
+                    </form>
+                </div>
+            </aside>
+            <main class="main">
+                <section class="dellivery_addres">
+                    <div class="personal_top">
+                        <h1 class="personal_title">Адрес доставки</h1>
+                        <a href="#" class="personal_btn">Новый адрес <span><i class="fa-solid fa-plus"></i></span></a>
+                    </div>
+                    <div class="personal_block">
+                        <div class="personal_left">
+                            <img src="../img/images/Personal-Area/adress-delivery.png" alt="">
+                        </div>
+                        <div class="personal_right">
+                            <h2 class="personal_right__title">У вас нет сохраненных адресов</h2>
+                            <p class="personal_right__text">Переходите в интересующую вас категориюи сделайте свой первый заказ и адрес сохранится автоматически</p>
+                        </div>
+                    </div>
+                    <div class="delivery_addres__wrapper">
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="content_left">
+                    <div class="footer__logo"><a href="https://www.instagram.com/codecultis/">JasWeb</a></div>
+                    <img src="../img/icons/app-store.svg" alt="app-store">
+                    <img src="../img/icons/google-play.svg" alt="google-play">
+                    <p class="text-left">© Ninja Sushi. All rights reserved.</p>
+                    <p class="text-mob">В ассортименте Ninja Sushi представлены роллы, суши, сеты и напитки на любой вкус.</p>
+                </div>
+                <div class="content_center">
+                    <nav class="footer_nav">
+                        <p class="text">Навигация:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="../../../Toha/src/index.html">Главная</a></li>
+                            <li class="list-item"><a href="../../../Beka/src/pages/Category.html">Меню</a></li>
+                            <li class="list-item"><a href="../../../Toha/src/pages/Delivery-address.html">Доставка</a></li>
+                            <li class="list-item"><a href="#">Вакансии</a></li>
+                            <li class="list-item"><a href="../../../Damir/src/pages/News.html">Новости</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_nav">
+                        <p class="text">Оформить заказ:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item-mob"><a class="gray" href="#">Звоните нам с 9:00 до 21:00 без выходных</a></li>
+
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_nav">
+                        <p class="text">Время работы:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="#">с 11:00 до 22:45</a></li>
+                            <li class="list-item"><a href="#">с 22.45 до 06.00</a></li>
+                            <li class="list-item"><a class="gray" href="#">Ночная доставка</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="socials">
+                        <p class="socials-text">Мы в соц. сетях:</p>
+                        <a href=""> <img class="facebook" src="../img/icons/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/dangir_bai/"> <img class="insta" src="../img/icons/insta.svg" alt="insta"></a>
+                        <a class="social-btn" href="#">
+                            <img src="../img/icons/tg.svg" alt="tg">
+                            Техподдержка
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content_right">
+                    <h2 class="title-right">#NinjaSushi</h2>
+                    <p class="text-right">Ninja Sushi в фотографиях наших клиентов</p>
+                    <a href="https://www.instagram.com/codecultis/" class="btn-right">Перейти в instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="content-left">
+                    <p class="text-left__bottom">Политика конфиденциальности</p>
+                    <p class="text-left__bottom second">Сделано Данияром(dangir_bai)</p>
+                </div>
+                <div class="content-right">
+                    <img src="../img/icons/master-card.svg" alt="master-card">
+                    <img src="../img/icons/visa.svg" alt="visa">
+                    <img src="../img/icons/pb.svg" alt="pb">
+                </div>
+            </div>
+            <div class="footer-bottom__mob">
+                <p class="text-footer__mob">Пользовательское соглашение</p>
+                <div class="banks">
+                    <img src="../img/icons/master-card.svg" alt="master-card">
+                    <img src="../img/icons/visa.svg" alt="visa">
+                    <img src="../img/icons/pb.svg" alt="pb">
+                    <p class="text-footer__mob">Сделано Данияром(dangir_bai)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="overlay hidden"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="../js/personal.js"></script>
+    <script src="../js/card.js"></script>
+    <script src="../js/btn.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

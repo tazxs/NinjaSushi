@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-top">
+                <div class="logо">
+                    <a href="https://www.instagram.com/codecultis/" class="logo-link">Jas <span>Web</span></a>
+                </div>
+                <div class="country" id="country">
+                    <img class="kz" src="./img/images/kz.png" alt="kz">
+                    <p class="text-country">Актобе</p>
+                    <p class="text-language">RU</p>
+                </div>
+
+                <div class="location none" id="location">
+                    <div class="flex-title">
+                        <h2 class="title-location">Вы в Актобе?</h2>
+                        <div class="cross-location">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <a href="#" class="location-btn">Да</a>
+                    <a href="#" class="location-btn">Нет</a>
+                </div>
+
+                <div class="modal-language none">
+                    <div class="flex-title">
+                        <h2 class="title-language">Выберите язык</h2>
+                        <div class="cross-language">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <a href="#" class="btn-language">RU</a>
+                    <a href="#" class="btn-language">UA</a>
+                    <a href="#" class="btn-language">EN</a>
+                    <div class="choose-town">
+                        <p class="text-choose">Выберите город</p>
+                        <a href="#" class="btn-town">Aктобе</a>
+                        <a href="#" class="btn-town">Атырау</a>
+                        <a href="#" class="btn-town">Алматы</a>
+                        <a href="#" class="btn-town">Астана</a>
+                    </div>
+                </div>
+
+
+
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link">Главная</a></li>
+                        <li class="nav-item"><a href="./pages/Delivery.html" class="nav-link">Доставка</a></li>
+                        <li class="nav-item"><a href="./pages/Public-contract.html" class="nav-link">О нас</a></li>
+                        <li class="nav-item"><a href="./pages/News.html" class="nav-link">Новости</a></li>
+                    </ul>
+                </nav>
+
+                <div class="phone">
+                    <img src="./img/icons/phone-header.svg" alt="phone">
+                    <p class="phone-number">+38 097 699 34 38</p>
+                </div>
+
+                <div class="phone-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-phone">Звоните нам с 10:00 до 21:30 без выходных</h2>
+                        <div class="phone-cross">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <div class="block-phone">
+                        <img src="./img/icons/phone-modal(1).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                    </div>
+                    <div class="block-phone">
+                        <img src="./img/icons/phone-modal(2).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (066) 031 76 30</p>
+                    </div>
+                    <div class="block-phone">
+                        <img src="./img/icons/phone-modal(3).svg" alt="phone-modal">
+                        <p class="phone-text">+38 (093) 924 98 28</p>
+                    </div>
+                </div>
+
+                <div class="notification-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-notification">Уведомления</h2>
+                        <div class="cross-notification">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+                    <div class="notification-order">
+                        <p class="order-text">Ашот, ваш заказ успешно доставлен!</p>
+                        <div class="tips">
+                            <h3 class="tips-title">Хотите оставить чаевые?</h3>
+                            <div class="tips-btns">
+                                <a href="#" class="tip-btn">20 <span class="currency">₴</span> <span
+                                        class="discount">(5%)</span></a>
+                                <a href="#" class="tip-btn">50 <span class="currency">₴</span> <span
+                                        class="discount">(10%)</span></a>
+                                <a href="#" class="tip-btn">75 <span class="currency">₴</span> <span
+                                        class="discount">(15%)</span></a>
+                                <input type="text" placeholder="Укажите сумму">
+                                <a href="" class="tip-btn red">Не оставлять чаевых</a>
+                                <a href="" class="tip-btn green">Оплатить 75₴ </a>
+                            </div>
+
+                        </div>
+                        <p class="order-text gray">16.02 в 16:40</p>
+
+                    </div>
+                    <div class="block-notification">
+                        <h2 class="block-title">Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году
+                        </h2>
+                        <p class="block-text">16.02 в 16:40</p>
+                    </div>
+                    <div class="block-notification">
+                        <h2 class="block-title">Итальянская полиция обнаружила картину Тициана, исчезнувшую в 2004 году
+                        </h2>
+                        <p class="block-text">16.02 в 16:40</p>
+                    </div>
+                </div>
+
+                <div class="cart-modal none">
+                    <div class="flex-title">
+                        <h2 class="title-cart">Ваш заказ</h2>
+                        <div class="cross-cart">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="./img/images/kit (1).png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="./img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="./img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="./img/images/Philadelphia-with-salmon.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Филадельфия с угрем</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="./img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="./img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="./img/images/Kratos.png" alt="Kratos">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="./img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="./img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="./img/images/Gunkan-salmon.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="./img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="./img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="./img/images/Nigiri-eel.png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="./img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="./img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-order">
+                        <div class="cross-order">
+                            <img src="./img/icons/cross.svg" alt="cross">
+                        </div>
+                        <div class="left-order">
+                            <img src="./img/images/snack(2).png" alt="kit (1)">
+                            <div class="left-info">
+                                <h3 class="left-title">Сет #1</h3>
+                                <p class="left-text">Вес: 40 г</p>
+                            </div>
+                        </div>
+                        <div class="right-order">
+                            <p class="cost">240 грн</p>
+                            <div class="quantity">
+                                <div class="minus">
+                                    <img src="./img/icons/minus (2).svg" alt="minus">
+                                </div>
+                                <p class="number">1</p>
+                                <div class="plus">
+                                    <img src="./img/icons/plus (2).svg" alt="plus">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="cart-text">Минимальная сумма заказа 400 грн</p>
+                    <div class="block-total">
+                        <div class="left-total">
+                            <p>Итого:</p>
+                            <h3 class="total-title">643 <span>грн</span></h3>
+                        </div>
+                        <div class="right-total">
+                            <a href="#" class="btn-green">Оформить заказ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-btns__header">
+                    <a href="#" class="header-btn bell">
+                        <img src="./img/icons/bell.svg" alt="bell">
+                    </a>
+                    <a href="#" class="header-btn heart">
+                        <img src="./img/icons/heart.svg" alt="hea">
+                    </a>
+                    <a href="#" class="header-btn user">
+                        <img src="./img/icons/user.svg" alt="bell">
+                    </a>
+                    <a href="#" class="header-btn cart">
+                        Корзина
+                        <img src="./img/icons/shopping-bag-black-(2).svg" alt="bell">
+                    </a>
+                    <a href="#" id="burger-menu" class="burger-menu">
+                        <img src="./img/icons/burger-menu.svg" alt="burger-menu">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="header-down">
+                <div class="row-dishes">
+                    <div class="dish">
+                        <img src="./img/icons/roll.svg" alt="roll">
+                        <p class="text-dish">Роллы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/sushi.svg" alt="sushi">
+                        <p class="text-dish">Суши</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/kit.svg" alt="kit">
+                        <p class="text-dish">Сеты</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/bowls.svg" alt="bowls">
+                        <p class="text-dish">Боулы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/drinks.svg" alt="drinks">
+                        <p class="text-dish">Напитки</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/souses.svg" alt="souses">
+                        <p class="text-dish">Соусы</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/spiral.svg" alt="spiral">
+                        <p class="text-dish">Неизв...</p>
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/spiral.svg" alt="spiral">
+                        <p class="text-dish">Неизв...</p>
+                    </div>
+                </div>
+                <div class="row-dishes-mob">
+                    <div class="dish">
+                        <img src="./img/icons/roll.svg" alt="roll">
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/sushi.svg" alt="sushi">
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/kit.svg" alt="kit">
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/bowls.svg" alt="bowls">
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/drinks.svg" alt="drinks">
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/souses.svg" alt="souses">
+                    </div>
+                    <div class="dish">
+                        <img src="./img/icons/spiral.svg" alt="spiral">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-modal hidden">
+            <div class="container-menu">
+                <div class="flex-title__menu">
+                    <h2 class="menu-title">Меню</h2>
+                    <div class="cross-menu">
+                        <img src="./img/icons/cross.svg" alt="cross">
+                    </div>
+                </div>
+                <div class="menu-content">
+                    <div class="country">
+                        <div class="left">
+                            <img src="./img/images/kz.png" alt="kz">
+                            <p class="text-country">Актобе</p>
+                        </div>
+                        <div class="right">
+                            <img src="./img/icons/chevron-down.svg" alt="chevron-down">
+                        </div>
+                    </div>
+
+                    <div class="language">
+                        <div class="left">
+                            <p class="text-language">Язык:Ru</p>
+                        </div>
+                        <div class="right">
+                            <img src="./img/icons/chevron-down.svg" alt="chevron-down">
+                        </div>
+                    </div>
+
+                    <div class="dishes">
+                        <div class="dish">
+                            <img src="./img/icons/sushi-orange.svg" alt="sushi-orange">
+                            <p class="text-product">Суши</p>
+                        </div>
+
+                        <div class="dish">
+                            <img src="./img/icons/roll-orange.svg" alt="roll-orange">
+                            <p class="text-product">Роллы</p>
+                        </div>
+                        <div class="dish">
+                            <img src="./img/icons/kit-orange.svg" alt="kit-orange">
+                            <p class="text-product">Сеты</p>
+                        </div>
+                        <div class="dish">
+                            <img src="./img/icons/bowls-orange.svg" alt="bowls-orange">
+                            <p class="text-product">Боулы</p>
+                        </div>
+                        <div class="dish">
+                            <img src="./img/icons/drinks-orange.svg" alt="drinks-orange">
+                            <p class="text-product">Напитки</p>
+                        </div>
+                        <div class="dish">
+                            <img src="./img/icons/souses-orange.svg" alt="souses-orange">
+                            <p class="text-product">Снеки</p>
+                        </div>
+                        <div class="dish">
+                            <img src="./img/icons/spiral.svg" alt="spiral">
+                            <p class="text-product green">New</p>
+                        </div>
+                        <div class="dish">
+                            <img src="./img/icons/spiral.svg" alt="spiral">
+                            <p class="text-product green">New</p>
+                        </div>
+                    </div>
+
+                    <div class="nav-blocks">
+                        <a href="" class="block-nav ">
+                            <img src="./img/icons/shopping-bag-black (2).svg" alt="">
+                            Повторить прошлый заказ
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="./img/icons/heart.svg" alt="">
+                            Избранное
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="./img/icons/user.svg" alt="">
+                            Профиль
+                        </a>
+                        <a href="" class="block-nav ">
+                            Главная
+                        </a>
+                        <a href="" class="block-nav ">
+                            Доставка
+                        </a>
+                        <a href="" class="block-nav ">
+                            О нас
+                        </a>
+                        <a href="" class="block-nav ">
+                            Новости
+                        </a>
+                        <a href="" class="block-nav ">
+                            <img src="./img/icons/tg.svg" alt="tg">
+                            Поддержка
+                        </a>
+                    </div>
+
+                    <div class="block-checkout">
+                        <h3 class="title-checkout">Оформить заказ:</h3>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="phone-text">+38 (067) 436 61 27</p>
+                        <p class="text-checkout">Звоните нам с 9:00 до 21:00 без выходных</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="main_block">
+                <div class="main_left">
+                    <h1 class="main_title">Ninja Sushi в Киеве! Пока только на левом берегу</h1>
+                    <p class="main_subtext">Доставку делаем с 10:00 до 19:30</p>
+                    <a href="../../Damir/src/pages/News.html" class="btn">Перейти к новости</a>
+                </div>
+                <div class="main_right"></div>
+            </section>
+            <section class="section_sushi">
+                <div class="section_top">
+                    <h2 class="section_title">Суши</h2>
+                    <a href="#" class="top_btn">Смотреть все</a>
+                </div>
+                <div class="cards_block">
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/Изображение.png" alt="">
+                            <div class="card_image__block">
+                                <div class="billet_block">
+                                    <a href="#" class="billet orange">Hit</a>
+                                    <a href="#" class="billet green">New</a>
+                                </div>
+                                <div class="image_icons">
+                                    <a href="#" class="image_icons__icon"><i
+                                            class="fa-solid fa-pepper-hot orange"></i></a>
+                                    <a href="#" class="image_icons__icon"><i class="fa-brands fa-envira green"></i></a>
+                                    <a href="#" class="image_icons__icon"><i class="fa-solid fa-bottle-droplet"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="card__title">Гункан лосось</h2>
+                        <h3 class="card__subtitle">Вес: 40 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Gunkan-eel.png" alt="">
+                            <div class="card_image__block">
+                                <div class="billet_block">
+                                    <a href="#" class="billet green">New</a>
+                                </div>
+                                <div class="image_icons">
+                                    <a href="#" class="image_icons__icon"><i
+                                            class="fa-solid fa-pepper-hot orange"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="card__title">Гункан креветка</h2>
+                        <h3 class="card__subtitle">Вес: 40 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Nigiri-eel.png" alt="">
+                            <div class="card_image__block">
+                                <div class="billet_block">
+                                    <a href="#" class="billet orange">Hit</a>
+                                </div>
+                                <div class="image_icons">
+                                    <a href="#" class="image_icons__icon"><i class="fa-brands fa-envira green"></i></a>
+                                    <a href="#" class="image_icons__icon"><i class="fa-solid fa-bottle-droplet"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="card__title">Нигири угорь</h2>
+                        <h3 class="card__subtitle">Вес: 40 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Nigiri-eel (2).png" alt="">
+                        </div>
+                        <h2 class="card__title">Нигири угорь</h2>
+                        <h3 class="card__subtitle">Вес: 252 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(5).png" alt="">
+                        </div>
+                        <h2 class="card__title">Гункан с тунцом и трюфелем</h2>
+                        <h3 class="card__subtitle">Вес: 40 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Gunkan-Tuna-Spicy.png" alt="">
+                        </div>
+                        <h2 class="card__title">Гункан тунец спайси
+                        </h2>
+                        <h3 class="card__subtitle">Вес: 40 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/gunkan-shrimp.png" alt="">
+                        </div>
+                        <h2 class="card__title">Гункан угорь</h2>
+                        <h3 class="card__subtitle">Вес: 40 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Nigiri-tuna.png" alt="">
+                        </div>
+                        <h2 class="card__title">Нигири тунец</h2>
+                        <h3 class="card__subtitle">Вес: 40 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section_rolls">
+                <div class="section_top">
+                    <h2 class="section_title">Ролы</h2>
+                    <a href="#" class="top_btn">Смотреть все</a>
+                </div>
+                <div class="cards_block">
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Philadelphia-with-salmon.png" alt="">
+                        </div>
+                        <h2 class="card__title">Филадельфия с лососем</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Philadelphia-with-eel.png" alt="">
+                        </div>
+                        <h2 class="card__title">Филадельфия с угрем</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Kratos.png" alt="">
+                        </div>
+                        <h2 class="card__title">Кратос</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Yamamoto.png" alt="">
+                        </div>
+                        <h2 class="card__title">Ямамото</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Baked-shrimp.png" alt="">
+                        </div>
+                        <h2 class="card__title">Запеченная креветка</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Cheese-with-salmon.png" alt="">
+                        </div>
+                        <h2 class="card__title">Сырный с лососем</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Mikasa.png" alt="">
+                        </div>
+                        <h2 class="card__title">Микаса</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/Combo-Philadelphia.png" alt="">
+                        </div>
+                        <h2 class="card__title">Комбо Филадельфия</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section_sets">
+                <div class="section_top">
+                    <h2 class="section_title">Сеты</h2>
+                    <a href="#" class="top_btn">Смотреть все</a>
+                </div>
+                <div class="cards_block">
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(1).png" alt="">
+                        </div>
+                        <h2 class="card__title">Сет #1</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(2).png" alt="">
+                        </div>
+                        <h2 class="card__title">Сет #2</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(3).png" alt="">
+                        </div>
+                        <h2 class="card__title">Сет #3</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(4).png" alt="">
+                        </div>
+                        <h2 class="card__title">Сет Осака</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(5).png" alt="">
+                        </div>
+                        <h2 class="card__title">Суши лосось в нори</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(6).png" alt="">
+                        </div>
+                        <h2 class="card__title">Сет #7</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(7).png" alt="">
+                        </div>
+                        <h2 class="card__title">Сет #8</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/kit(8).png" alt="">
+                        </div>
+                        <h2 class="card__title">Гункан Сет</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section_slider">
+                <div class="slider">
+                    <div class="slider__track">
+                        <div class="slider__slide">
+                            <div class="slider_left">
+                                <h2 class="slider_title">Филадельфия с лососем</h2>
+                                <p class="slider_text">Сир вершковий, шиітаке теріякі, краб-крем, лосось</p>
+                                <div class="slider_bottom">
+                                    <a href="" class="btn btn_slider">В корзину</a>
+                                    <p class="price">190 <span class="gray">грн</span></p>
+                                </div>
+                            </div>
+                            <div class="slider_right">
+                                <img src="./img/Bitmap.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider_left">
+                                <h2 class="slider_title">Филадельфия с лососем</h2>
+                                <p class="slider_text">Сир вершковий, шиітаке теріякі, краб-крем, лосось</p>
+                                <div class="slider_bottom">
+                                    <a href="" class="btn btn_slider">В корзину</a>
+                                    <p class="price">190 <span class="gray">грн</span></p>
+                                </div>
+                            </div>
+                            <div class="slider_right">
+                                <img src="./img/Bitmap.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider_left">
+                                <h2 class="slider_title">Филадельфия с лососем</h2>
+                                <p class="slider_text">Сир вершковий, шиітаке теріякі, краб-крем, лосось</p>
+                                <div class="slider_bottom">
+                                    <a href="" class="btn btn_slider">В корзину</a>
+                                    <p class="price">190 <span class="gray">грн</span></p>
+                                </div>
+                            </div>
+                            <div class="slider_right">
+                                <img src="./img/Bitmap.png" alt="">
+                            </div>
+                        </div>
+                        <div class="slider__slide">
+                            <div class="slider_left">
+                                <h2 class="slider_title">Филадельфия с лососем</h2>
+                                <p class="slider_text">Сир вершковий, шиітаке теріякі, краб-крем, лосось</p>
+                                <div class="slider_bottom">
+                                    <a href="" class="btn btn_slider">В корзину</a>
+                                    <p class="price">190 <span class="gray">грн</span></p>
+                                </div>
+                            </div>
+                            <div class="slider_right">
+                                <img src="./img/Bitmap.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider__control slider__control--prev"><i
+                            class="fa-solid fa-arrow-left"></i></button>
+                    <button class="slider__control slider__control--next"><i
+                            class="fa-solid fa-arrow-right"></i></button>
+                    <div class="slider__indicators">
+                        <span class="slider__indicator"></span>
+                        <span class="slider__indicator"></span>
+                        <span class="slider__indicator"></span>
+                        <span class="slider__indicator"></span>
+                    </div>
+                </div>
+
+
+            </section>
+            <section class="section_snack">
+                <div class="section_top">
+                    <h2 class="section_title">Закуски</h2>
+                    <a href="#" class="top_btn">Смотреть все</a>
+                </div>
+                <div class="cards_block">
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(1).png" alt="">
+                        </div>
+                        <h2 class="card__title">Тартар из лосося с халапеньо</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(2).png" alt="">
+                        </div>
+                        <h2 class="card__title">Тартар из лосося с авокадо</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(3).png" alt="">
+                        </div>
+                        <h2 class="card__title">Салат Чука-Вакаме</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(4).png" alt="">
+                        </div>
+                        <h2 class="card__title">Салат с киноа, авокадо и курицей</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(5).png" alt="">
+                        </div>
+                        <h2 class="card__title">Инари с тунцом и трюфелем</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(6).png" alt="">
+                        </div>
+                        <h2 class="card__title">Инари с морским гребешком и сыром</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(7).png" alt="">
+                        </div>
+                        <h2 class="card__title">Инари с лососем и авокадо</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/snack(8).png" alt="">
+                        </div>
+                        <h2 class="card__title">Тартар микс</h2>
+                        <h3 class="card__subtitle">Вес: 320 г</h3>
+                        <p class="card__text">Нори, рис, японский майонез, бальзамик, трюфельная сальса, кунжутное масло
+                        </p>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section_drinks">
+                <div class="section_top">
+                    <h2 class="section_title">Напитки</h2>
+                    <a href="#" class="top_btn">Смотреть все</a>
+                </div>
+                <div class="cards_block">
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/drink (1).png" alt="">
+                        </div>
+                        <h2 class="card__title">Coca-Cola 0.25(ст)</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/drink (2).png" alt="">
+                        </div>
+                        <h2 class="card__title">Fanta</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/drink (3).png" alt="">
+                        </div>
+                        <h2 class="card__title">Моршинская негаз.</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img//images/index/drink (4).png" alt="">
+                        </div>
+                        <h2 class="card__title">Берн</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/drink (5).png" alt="">
+                        </div>
+                        <h2 class="card__title">Coca-Cola Vanilla</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img//images/index/drink (6).png" alt="">
+                        </div>
+                        <h2 class="card__title">Dr Pepper вишня</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/drink (7).png" alt="">
+                        </div>
+                        <h2 class="card__title">Dr Pepper классический</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__image">
+                            <img src="./img/images/index/drink (8).png" alt="">
+                        </div>
+                        <h2 class="card__title">Sprite</h2>
+                        <h3 class="card__subtitle">Объем: 0,25 л</h3>
+                        <div class="card__bottom">
+                            <h3 class="card_bottom__left">190 <span class="gray">грн</span></h3>
+                            <div class="card_bottom__right">
+                                <a href="" class="card_btn heart"><i class="fa-regular fa-heart"></i></a>
+                                <a href="" class="card_btn plus"><i class="fa-solid fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section_map">
+                <h2 class="map_title">Каждая кухня работает со своей зоной доставки, чтобы привезти еду максимально
+                    быстро</h2>
+                <div class="map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Abfd608bdecc60ce5f4f7dfc629748c8c806f9a2dabbd17427ab1051f9f0fb2b2&amp;source=constructor"
+                        width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </section>
+            <section class="section_block">
+                <div class="block_left">
+                    <h2 class="block_title">Ниндзя - это семья.Скачивайте наше приложение</h2>
+                    <p class="block_text">Станьте ниндзя! Будьте в курсе всех новинок и никогда не оставаться голодным.
+                    </p>
+                    <div class="block_buttons"></div>
+                </div>
+                <div class="block_right">
+                    <img src="./img/Group 1903.png" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="content_left">
+                    <div class="footer__logo"><a href="#">CodeCult</a></div>
+                    <img src="./img/icons/app-store.svg" alt="app-store">
+                    <img src="./img/icons/google-play.svg" alt="google-play">
+                    <p class="text-left">© Ninja Sushi. All rights reserved.</p>
+                    <p class="text-mob">В ассортименте Ninja Sushi представлены роллы, суши, сеты и напитки на любой
+                        вкус.</p>
+                </div>
+                <div class="content_center">
+                    <nav class="footer_nav">
+                        <p class="text">Навигация:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="./index.html">Главная</a></li>
+                            <li class="list-item"><a href="../../Beka/src/pages/Category.html">Меню</a></li>
+                            <li class="list-item"><a href="../../Damir/src/pages/Delivery.html">Доставка</a></li>
+                            <li class="list-item"><a href="#">Вакансии</a></li>
+                            <li class="list-item"><a href="../../Damir/src/pages/News.html">Новости</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_nav">
+                        <p class="text">Оформить заказ:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item"><a href="#">+38 (067) 436 61 27</a></li>
+                            <li class="list-item-mob"><a class="gray" href="#">Звоните нам с 9:00 до 21:00 без
+                                    выходных</a></li>
+
+                        </ul>
+                    </nav>
+
+                    <nav class="footer_nav">
+                        <p class="text">Время работы:</p>
+                        <ul class="nav_list">
+                            <li class="list-item"><a href="#">с 11:00 до 22:45</a></li>
+                            <li class="list-item"><a href="#">с 22.45 до 06.00</a></li>
+                            <li class="list-item"><a class="gray" href="#">Ночная доставка</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="socials">
+                        <p class="socials-text">Мы в соц. сетях:</p>
+                        <a href=""> <img class="facebook" src="./img/icons/facebook.svg" alt="facebook"></a>
+                        <a href="https://www.instagram.com/dangir_bai/"> <img class="insta" src="./img/icons/insta.svg" alt="insta"></a>
+                        <a class="social-btn" href="#">
+                            <img src="./img/icons/tg.svg" alt="tg">
+                            Техподдержка
+                        </a>
+                    </div>
+                </div>
+
+                <div class="content_right">
+                    <h2 class="title-right">#NinjaSushi</h2>
+                    <p class="text-right">Ninja Sushi в фотографиях наших клиентов</p>
+                    <a href="https://www.instagram.com/codecultis/" class="btn-right">Перейти в instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="content-left">
+                    <p class="text-left__bottom">Политика конфиденциальности</p>
+                    <p class="text-left__bottom second">Сделано Данияром(dangir_bai)</p>
+                </div>
+                <div class="content-right">
+                    <img src="./img/icons/master-card.svg" alt="master-card">
+                    <img src="./img/icons/visa.svg" alt="visa">
+                    <img src="./img/icons/pb.svg" alt="pb">
+                </div>
+            </div>
+            <div class="footer-bottom__mob">
+                <p class="text-footer__mob">Пользовательское соглашение</p>
+                <div class="banks">
+                    <img src="./img/icons/master-card.svg" alt="master-card">
+                    <img src="./img/icons/visa.svg" alt="visa">
+                    <img src="./img/icons/pb.svg" alt="pb">
+                    <p class="text-footer__mob">Сделано Данияром(dangir_bai)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/btn.js"></script>
+    <script src="./js/card.js"></script>
+</body>
+
+</html>
